@@ -6,6 +6,12 @@ GIT
     foobara (0.0.1)
 
 GIT
+  remote: https://github.com/foobara/anthropic-api.git
+  revision: df5703ce2a1f7b6f17286527ebc29fa77f45554c
+  specs:
+    foobara-anthropic-api (0.0.1)
+
+GIT
   remote: https://github.com/foobara/command-generator.git
   revision: b5aaf39f10cd39c48a017cc224fd8594bfa676f1
   specs:
@@ -205,6 +211,7 @@ PLATFORMS
 
 DEPENDENCIES
   foobara!
+  foobara-anthropic-api!
   foobara-anthropic-api-rack!
   foobara-command-generator!
   foobara-domain-generator!

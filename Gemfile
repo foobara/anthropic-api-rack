@@ -5,7 +5,7 @@ gemspec
 
 # TODO: move this to .gemspec
 gem "foobara", git: "foobara", branch: "main"
-
+gem "foobara-anthropic-api", github: "foobara/anthropic-api"
 gem "foobara-dotenv-loader", github: "foobara/dotenv-loader"
 gem "foobara-util", github: "foobara/util"
 
