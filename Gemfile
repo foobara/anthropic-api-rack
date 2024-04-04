@@ -4,9 +4,11 @@ ruby File.read("#{__dir__}/.ruby-version")
 gemspec
 
 # TODO: move this to .gemspec
+
 gem "foobara", git: "foobara", branch: "main"
 gem "foobara-anthropic-api", github: "foobara/anthropic-api"
 gem "foobara-dotenv-loader", github: "foobara/dotenv-loader"
+gem "foobara-rack-connector", github: "foobara/rack-connector"
 gem "foobara-util", github: "foobara/util"
 
 gem "rake"
