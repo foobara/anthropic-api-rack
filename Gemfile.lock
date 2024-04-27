@@ -1,13 +1,13 @@
 GIT
   remote: foobara
-  revision: 4321c4c70abf92d4d690ae086e0b3c5df4499c9b
+  revision: 9d258143cf0a58a3bd7a63c89443dff0fc45ef14
   branch: main
   specs:
     foobara (0.0.1)
 
 GIT
   remote: https://github.com/foobara/anthropic-api.git
-  revision: 1e07ba8bbef0008a62bfaadffac3be5c320b4f03
+  revision: 239d3f2ad63ddb477fb2c0681b1fe4c4e1e77057
   specs:
     foobara-anthropic-api (0.0.1)
 
@@ -20,7 +20,7 @@ GIT
 
 GIT
   remote: https://github.com/foobara/rack-connector.git
-  revision: 1678f23482f24dfaabbaa7129c15db55694450fb
+  revision: aaf31157e8db7832e76fd130bbae3537924ef9f8
   specs:
     foobara-rack-connector (0.1.0)
       rack
@@ -41,7 +41,7 @@ GIT
 
 GIT
   remote: https://github.com/foobara/util.git
-  revision: 3773dcb765bc70dea2b14cfe179ed3849d5126c2
+  revision: 7459f1000de349ca3ba56122dc66c1a81dcf6c4e
   specs:
     foobara-util (0.1.0)
 
@@ -96,7 +96,7 @@ GEM
       nenv (~> 0.1)
       shellany (~> 0.0)
     parallel (1.24.0)
-    parser (3.3.0.5)
+    parser (3.3.1.0)
       ast (~> 2.4.1)
       racc
     pry (0.14.2)

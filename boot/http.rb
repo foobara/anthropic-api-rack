@@ -7,6 +7,6 @@ default_serializers = [
 
 rack_connector = Foobara::CommandConnectors::Http::Rack.new(default_serializers:)
 
-rack_connector.connect(Foobara::Ai::Anthropic)
+rack_connector.connect(Foobara::Ai::AnthropicApi)
 
 RACK_CONNECTOR = rack_connector
