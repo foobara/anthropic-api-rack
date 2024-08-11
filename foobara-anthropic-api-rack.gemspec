@@ -21,6 +21,7 @@ Gem::Specification.new do |spec|
     "LICENSE.txt"
   ]
 
+  spec.add_dependency "foobara"
   spec.add_dependency "rackup"
   spec.add_dependency "rake"
 
