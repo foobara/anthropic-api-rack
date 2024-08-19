@@ -8,6 +8,8 @@ gem "foobara-anthropic-api", github: "foobara/anthropic-api"
 gem "foobara-dotenv-loader", github: "foobara/dotenv-loader"
 gem "foobara-rack-connector", github: "foobara/rack-connector"
 
+# gem "foobara", path: "../foobara"
+
 group :development do
   gem "foobara-rubocop-rules"
   gem "guard-rspec"
