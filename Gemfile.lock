@@ -1,25 +1,3 @@
-GIT
-  remote: https://github.com/foobara/anthropic-api.git
-  revision: a133bef96c6c23a17f444952729cfc5ac5ec3bef
-  specs:
-    foobara-anthropic-api (0.0.1)
-
-GIT
-  remote: https://github.com/foobara/dotenv-loader.git
-  revision: be45a09af7cd96df51639b8d9e4c95631428226e
-  specs:
-    foobara-dotenv-loader (0.0.1)
-      dotenv
-
-GIT
-  remote: https://github.com/foobara/rack-connector.git
-  revision: 1cc4ecc68b266b22b9d8947ed2342eefc63a63ab
-  specs:
-    foobara-rack-connector (0.0.1)
-      foobara
-      foobara-util
-      rack
-
 PATH
   remote: .
   specs:
@@ -47,6 +25,14 @@ GEM
     ffi (1.17.0-x86_64-linux-gnu)
     foobara (0.0.4)
       foobara-util
+    foobara-anthropic-api (0.0.2)
+      foobara
+    foobara-dotenv-loader (0.0.1)
+      dotenv
+    foobara-rack-connector (0.0.1)
+      foobara
+      foobara-util
+      rack
     foobara-rubocop-rules (0.0.4)
       rubocop
       rubocop-rspec
@@ -161,10 +147,10 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
-  foobara-anthropic-api!
+  foobara-anthropic-api
   foobara-anthropic-api-rack!
-  foobara-dotenv-loader!
-  foobara-rack-connector!
+  foobara-dotenv-loader
+  foobara-rack-connector
   foobara-rubocop-rules
   foobara-spec-helpers
   guard-rspec
