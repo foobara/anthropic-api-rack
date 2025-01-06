@@ -26,11 +26,12 @@ GEM
     docile (1.4.1)
     dotenv (3.1.7)
     ffi (1.17.1-x86_64-linux-gnu)
-    foobara (0.0.42)
+    foobara (0.0.47)
+      bigdecimal
       foobara-util
     foobara-anthropic-api (0.0.2)
       foobara
-    foobara-dotenv-loader (0.0.1)
+    foobara-dotenv-loader (0.0.2)
       dotenv
     foobara-http-command-connector (0.0.8)
       foobara
@@ -42,7 +43,7 @@ GEM
     foobara-rubocop-rules (0.0.5)
       rubocop
       rubocop-rspec
-    foobara-spec-helpers (0.0.3)
+    foobara-spec-helpers (0.0.4)
       foobara-util
     foobara-util (0.0.8)
     formatador (1.1.0)
@@ -170,7 +171,7 @@ DEPENDENCIES
   webmock
 
 RUBY VERSION
-   ruby 3.2.2p53
+   ruby 3.4.1p0
 
 BUNDLED WITH
    2.4.14
