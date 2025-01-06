@@ -22,6 +22,9 @@ Gem::Specification.new do |spec|
   ]
 
   spec.add_dependency "foobara"
+  spec.add_dependency "foobara-anthropic-api"
+  spec.add_dependency "foobara-dotenv-loader"
+  spec.add_dependency "foobara-rack-connector"
   spec.add_dependency "rackup"
   spec.add_dependency "rake"
 

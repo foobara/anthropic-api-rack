@@ -3,11 +3,6 @@ ruby File.read("#{__dir__}/.ruby-version")
 
 gemspec
 
-# TODO: move this to .gemspec
-gem "foobara-anthropic-api"
-gem "foobara-dotenv-loader"
-gem "foobara-rack-connector"
-
 # gem "foobara", path: "../foobara"
 
 group :development do
