@@ -25,9 +25,9 @@ Gem::Specification.new do |spec|
   spec.add_dependency "foobara-anthropic-api", "< 2.0.0"
   spec.add_dependency "foobara-dotenv-loader", "< 2.0.0"
   spec.add_dependency "foobara-rack-connector", "< 2.0.0"
-  spec.add_dependency "puma", "< 2.0.0"
-  spec.add_dependency "rackup", "< 2.0.0"
-  spec.add_dependency "rake", "< 2.0.0"
+  spec.add_dependency "puma"
+  spec.add_dependency "rackup"
+  spec.add_dependency "rake"
 
   spec.require_paths = ["lib"]
   spec.metadata["rubygems_mfa_required"] = "true"

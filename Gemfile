@@ -9,6 +9,7 @@ gemspec
 # gem "foobara-anthropic-api", path: "../anthropic-api"
 
 group :development do
+  gem "foob", "< 2.0.0"
   gem "foobara-rubocop-rules", ">= 1.0.0"
   gem "guard-rspec"
   gem "rubocop-rake"
@@ -18,6 +19,9 @@ end
 group :development, :test do
   gem "pry"
   gem "pry-byebug"
+  # TODO: Just adding this to suppress warnings seemingly coming from pry-byebug. Can probably remove this once
+  # pry-byebug has irb as a gem dependency
+  gem "irb"
 end
 
 group :test do
