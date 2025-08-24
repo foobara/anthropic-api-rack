@@ -21,13 +21,13 @@ Gem::Specification.new do |spec|
     "LICENSE.txt"
   ]
 
-  spec.add_dependency "foobara"
-  spec.add_dependency "foobara-anthropic-api"
-  spec.add_dependency "foobara-dotenv-loader"
-  spec.add_dependency "foobara-rack-connector"
-  spec.add_dependency "puma"
-  spec.add_dependency "rackup"
-  spec.add_dependency "rake"
+  spec.add_dependency "foobara", ">=0.1.2", "< 2.0.0"
+  spec.add_dependency "foobara-anthropic-api", "< 2.0.0"
+  spec.add_dependency "foobara-dotenv-loader", "< 2.0.0"
+  spec.add_dependency "foobara-rack-connector", "< 2.0.0"
+  spec.add_dependency "puma", "< 2.0.0"
+  spec.add_dependency "rackup", "< 2.0.0"
+  spec.add_dependency "rake", "< 2.0.0"
 
   spec.require_paths = ["lib"]
   spec.metadata["rubygems_mfa_required"] = "true"

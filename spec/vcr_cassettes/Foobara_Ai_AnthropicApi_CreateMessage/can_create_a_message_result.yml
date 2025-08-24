@@ -5,8 +5,9 @@ http_interactions:
     uri: https://api.anthropic.com/v1/messages
     body:
       encoding: UTF-8
-      string: '{"model":"claude-3-opus-20240229","max_tokens":1024,"messages":[{"role":"user","content":"What
-        is the PH of honey?"}]}'
+      string: '{"model":"claude-3-5-sonnet-20241022","max_tokens":1024,"messages":[{"role":"user","content":"What
+        is the PH of honey?"}],"system":"You are like a scientist that answers questions
+        very concisely and accurately."}'
     headers:
       Content-Type:
       - application/json
@@ -20,59 +21,66 @@ http_interactions:
       - "*/*"
       User-Agent:
       - Ruby
-      Host:
-      - api.anthropic.com
   response:
     status:
       code: 200
       message: OK
     headers:
       Date:
-      - Thu, 04 Apr 2024 00:44:46 GMT
+      - Sun, 24 Aug 2025 18:00:35 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
       - chunked
       Connection:
       - keep-alive
+      Anthropic-Ratelimit-Input-Tokens-Limit:
+      - '160000'
+      Anthropic-Ratelimit-Input-Tokens-Remaining:
+      - '160000'
+      Anthropic-Ratelimit-Input-Tokens-Reset:
+      - '2025-08-24T18:00:34Z'
+      Anthropic-Ratelimit-Output-Tokens-Limit:
+      - '32000'
+      Anthropic-Ratelimit-Output-Tokens-Remaining:
+      - '32000'
+      Anthropic-Ratelimit-Output-Tokens-Reset:
+      - '2025-08-24T18:00:35Z'
       Anthropic-Ratelimit-Requests-Limit:
-      - '5'
+      - '2000'
       Anthropic-Ratelimit-Requests-Remaining:
-      - '4'
+      - '1999'
       Anthropic-Ratelimit-Requests-Reset:
-      - '2024-04-04T00:45:00Z'
+      - '2025-08-24T18:00:34Z'
       Anthropic-Ratelimit-Tokens-Limit:
-      - '10000'
+      - '192000'
       Anthropic-Ratelimit-Tokens-Remaining:
-      - '10000'
+      - '192000'
       Anthropic-Ratelimit-Tokens-Reset:
-      - '2024-04-04T00:45:00Z'
+      - '2025-08-24T18:00:34Z'
       Request-Id:
-      - req_01HqinKiZ3BgXS9G1o6EADN4
-      X-Cloud-Trace-Context:
-      - 951c4e460265ad9d5023898313901cac
+      - req_011CSSyJJW4WutA1ohAHKRdS
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Anthropic-Organization-Id:
+      - 7a8e3751-3b70-4f90-a3ce-07f57c9d0bfc
+      X-Envoy-Upstream-Service-Time:
+      - '1405'
       Via:
       - 1.1 google
       Cf-Cache-Status:
       - DYNAMIC
+      X-Robots-Tag:
+      - none
       Server:
       - cloudflare
       Cf-Ray:
-      - 86ed4541781c22ae-SJC
+      - 9744bffc399bed3a-SJC
     body:
       encoding: ASCII-8BIT
-      string: '{"id":"msg_01DehZuMHpbbfudAeGAWTsv7","type":"message","role":"assistant","content":[{"type":"text","text":"The
-        pH of honey typically ranges between 3.2 and 4.5, making it an acidic food.
-        The exact pH value varies depending on the type of honey, its geographical
-        origin, and the nectar source.\n\nSeveral factors contribute to the acidity
-        of honey:\n\n1. Gluconic acid: This is the predominant acid in honey, produced
-        by the enzyme glucose oxidase, which bees add to the nectar during the honey-making
-        process.\n\n2. Other acids: Honey also contains minor amounts of other acids,
-        such as citric, malic, and succinic acids.\n\n3. Floral source: The nectar''s
-        origin (the type of flower) influences the honey''s final pH, as different
-        nectars have varying acid content.\n\nDespite its acidic pH, honey has a relatively
-        mild taste due to its high sugar content, which masks the acidity. The low
-        pH also contributes to honey''s natural preservation properties, as it inhibits
-        the growth of many microorganisms and gives honey a long shelf life."}],"model":"claude-3-opus-20240229","stop_reason":"end_turn","stop_sequence":null,"usage":{"input_tokens":15,"output_tokens":225}}'
-  recorded_at: Thu, 04 Apr 2024 00:44:46 GMT
-recorded_with: VCR 6.2.0
+      string: '{"id":"msg_014LZKPN6p8nkaCNcH38JPK4","type":"message","role":"assistant","model":"claude-3-5-sonnet-20241022","content":[{"type":"text","text":"Honey
+        typically has a pH between 3.4 and 6.1, with an average pH of around 3.9.
+        This acidic pH is primarily due to the presence of gluconic acid and other
+        organic acids in honey."}],"stop_reason":"end_turn","stop_sequence":null,"usage":{"input_tokens":30,"cache_creation_input_tokens":0,"cache_read_input_tokens":0,"cache_creation":{"ephemeral_5m_input_tokens":0,"ephemeral_1h_input_tokens":0},"output_tokens":53,"service_tier":"standard"}}'
+  recorded_at: Sun, 24 Aug 2025 18:00:35 GMT
+recorded_with: VCR 6.3.1
